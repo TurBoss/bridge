@@ -16,7 +16,7 @@ local featureDef	=	{
 	damage				=10000,
 	flammable			=true,
 	reclaimable			=true,
-	autoreclaimable		=true,
+	autoreclaimable		=false,
 	customparams = { 
 		randomrotate		= "true", 
 	}, 

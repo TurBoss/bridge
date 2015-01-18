@@ -7,8 +7,8 @@ local mapinfo = {
 	name        = "The Bridge",
 	shortname   = "bridge",
 	description = "Jauria Map",
-	author      = "PerroTron",
-	version     = "1.7",
+	author      = "Jauria Estudios",
+	version     = "0.2",
 	--mutator   = "deployment";
 	--mapfile   = "", --// location of smf/sm3 file (optional)
 	modtype     = 3, --// 1=primary, 0=hidden, 3=map
@@ -29,8 +29,8 @@ local mapinfo = {
 
 
 	smf = {
-		minheight = 0,
-		maxheight = 120,
+		minheight = 380,
+		maxheight = 0,
 		smtFileName0 = "bridge.smt",
 		--smtFileName1 = "",
 		--smtFileName.. = "",
@@ -118,10 +118,10 @@ local mapinfo = {
 
 		fogStart     = 0.1,
 		fogEnd       = 1.0,
-		fogColor     = {0.7, 0.7, 0.8},
+		fogColor     = {0, 0, 0},
 
-		sunColor     = {1.0, 1.0, 1.0},
-		skyColor     = {0.1, 0.15, 0.7},
+		sunColor     = {0, 0, 0},
+		skyColor     = {0, 0, 0},
 		skyDir       = {0.0, 0.0, -1.0},
 		skyBox       = "",
 
@@ -148,9 +148,9 @@ local mapinfo = {
 		groundDiffuseColor  = {0.5, 0.5, 0.5},
 		groundSpecularColor = {0.1, 0.1, 0.1},
 		groundShadowDensity = 0.8,
-		unitAmbientColor    = {0.4, 0.4, 0.4},
-		unitDiffuseColor    = {0.7, 0.7, 0.7},
-		unitSpecularColor   = {0.7, 0.7, 0.7},
+		unitAmbientColor    = {0.2, 0.2, 0.2},
+		unitDiffuseColor    = {0.2, 0.2, 0.2},
+		unitSpecularColor   = {0.2, 0.2, 0.2},
 		unitShadowDensity   = 0.8,
 		
 		specularExponent    = 100.0,
@@ -171,7 +171,7 @@ local mapinfo = {
 		specularFactor = 1.0,
 		specularPower  = 20.0,
 
-		planeColor = {0.0, 0.4, 0.0},
+		planeColor = {0.0, 0.0, 0.0},
 
 		surfaceColor  = {0.75, 0.8, 0.85},
 		surfaceAlpha  = 0.55,
@@ -206,8 +206,8 @@ local mapinfo = {
 	},
 
 	teams = {
-		[0] = {startPos = {x = 300, z = 4632}},
-		[1] = {startPos = {x = 4810, z = 460}},
+		[0] = {startPos = {x = 120, z = 2560}},
+		[1] = {startPos = {x = 5000, z = 2560}},
 		--[2] = {startPos = {x = 0, z = 0}},
 		--[3] = {startPos = {x = 0, z = 0}},
 	},
@@ -240,14 +240,14 @@ local mapinfo = {
 			texture   = 'LuaGaia/effects/snowflake.png',
 		},
 		clouds = {
-			speed = 0.1, -- multiplier for speed of scrolling with wind
-			color = {1, 1, 1}, -- diffuse color of the fog
+			speed = 0.3, -- multiplier for speed of scrolling with wind
+			color = {0.3, 0.3, 0.3}, -- diffuse color of the fog
 			-- all altitude values can be either absolute, in percent, or "auto"
-			height = "15%", -- opacity of fog above and at this altitude will be zero
+			height = "80%", -- opacity of fog above and at this altitude will be zero
 			bottom = 0, -- no fog below this altitude
-			fade_alt = "5%", -- fog will linearly fade away between this and "height", should be between height and bottom
-			scale = 127, -- how large will the clouds be
-			opacity = 0.3, -- what it says
+			fade_alt = "40%", -- fog will linearly fade away between this and "height", should be between height and bottom
+			scale = 340, -- how large will the clouds be
+			opacity = 0.45, -- what it says
 		},
 	},
 }
