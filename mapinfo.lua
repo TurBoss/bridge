@@ -4,8 +4,8 @@
 --
 
 local mapinfo = {
-	name        = "Codar",
-	shortname   = "Codar",
+	name        = "The Bridge",
+	shortname   = "bridge",
 	description = "Jauria Map",
 	author      = "PerroTron",
 	version     = "1.7",
@@ -31,7 +31,7 @@ local mapinfo = {
 	smf = {
 		minheight = 0,
 		maxheight = 120,
-		smtFileName0 = "codar.smt",
+		smtFileName0 = "bridge.smt",
 		--smtFileName1 = "",
 		--smtFileName.. = "",
 		--smtFileNameN = "",
